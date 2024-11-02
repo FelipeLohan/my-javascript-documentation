@@ -19,3 +19,17 @@ console.log(typeof f)
 console.log(typeof g)
 console.log(typeof h)
 console.log(typeof i)
+
+/* 
+
+No JavaScript temos alguns tipos de dados:
+
+1- Number (Números reais, inteiros)
+2- String (Cadeia de caracteres)
+3- Boolean (true or false)
+4- Object
+5- Array (também é um object)
+6- Null (também é um object)
+7- Undefined (Quando uma constante não tem valor armazenado na memória)
+
+*/
