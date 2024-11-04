@@ -47,4 +47,15 @@ console.log(todos)
 
 
 
-//ACESSO E ATRIBUIÇÃO
+//ACESSO E ATRIBUIÇÃO:
+const frutas = ['Melancia', 'Laranja', 'Kiwi', 'Melao']
+console.log(frutas[0]) //Um array pode ser acessado colocando o index do elemento ao lado do nome dele
+frutas.forEach((element,index) => {
+  console.log(element) //o element faz referencia a literalmente o elemento em si.
+  //ou
+  console.log(frutas[index]) //o index faz referencia literalmente ao número do index que o elemento está.
+});
+
+for(let i = 0; i < frutas.length; i++){
+  console.log(frutas[i]) //Esse é o metodo de acesso usando for, o elemente i será o index do array.
+}
