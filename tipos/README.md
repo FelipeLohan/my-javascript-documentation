@@ -23,4 +23,7 @@ Uma curiosidade antes: uma String é considerado uma cadeia de caracteres, porta
 Esse dado é novo, implementado no EcmaScript 6, é um tipo de dado cuja instâncias sao únicas e imutáveis 
 
 ## Object
-Dentro do JavaScript os dados **null** e **undefined** também são tratados como objetos, um objeto é básicamente uma estrutura/conjunto de dados e instruções, centralizados, onde podemos trabalhar com eles. para entedermos um objeto, temos que entender primeiro o que é um classe, uma classe 
+Dentro do JavaScript os dados **null** e **undefined** também são tratados como objetos, um objeto é básicamente uma estrutura/conjunto de dados e instruções, centralizados, onde podemos trabalhar com eles. para entedermos um objeto, temos que entender primeiro o que é um classe, uma classe é basicamente um modelo, onde podemos instanciar vários objetos desse mesmo modelo, por exemplo:
+
+Classe: Carro
+Objetos: Kwid, Hilux, Ford-ka
