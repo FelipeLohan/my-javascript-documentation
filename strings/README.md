@@ -6,35 +6,45 @@ Uma String é um texto, que no JavaScript é representado por `""` ou `''`, assi
 ## CONCATENAÇÃO:
 Podemos concatenar uma String usando o operador de ` + ` por exemplo:
 
-> let saldoConta = 2000 
+```
+let saldoConta = 2000 
 console.log('tenho r$' + saldoConta + 'de saldo em minha conta') 
+```
 
 ## TEMPLATE STRINGS:
 
 Também pode ser declarado uma String usando ` `` ` tudo colocado entre a crase, é uma template String, ela facilita a concatenação de dados, pois os dados são colocados dentro de um cifrão seguido por chaves `${}` evitando de ter que usar o sinal de ` + ` para fazer a concatenação, deixa o código mais limpo
 
-> let saldoConta = 2000 
-console.log('tenho ${saldoConta} reais em minha conta)
+```
+let saldoConta = 2000 
+console.log(`tenho ${saldoConta} reais em minha conta`)
+```
 
 ### Conversão de Number para String:
 
-> let numero = 10
-> let numeroConvertido = numero.toString()
+```
+let numero = 10
+let numeroConvertido = numero.toString()
+```
 
 o metódo `toString()` converte um número para String
 
 ### Conversão de String para Number:
 
-> let numeroString = '10'
+```
+let numeroString = '10'
 let numeroConvertido = Number(numeroString)
+```
 
 o metódo `Number()` aceita como argumento uma String que você deseja transformar em Number, muito usado para quando capturamos informações de banco de dados ou html, e elas vem em String, mas precisamos tratar como Number.
 
 ### String convertida em minusculo e maiusculo:
 
-> let nome = 'Felipe Lohan'
-> let nomeMaiusculo = nome.toUpperCase()
-> let nomeMinusculo = nome.toLowerCase()
+```
+let nome = 'Felipe Lohan'
+let nomeMaiusculo = nome.toUpperCase()
+let nomeMinusculo = nome.toLowerCase()
+```
 
 - `toUpperCase()` é usado para transformar a String toda em maiusculo
 
@@ -42,8 +52,10 @@ o metódo `Number()` aceita como argumento uma String que você deseja transform
 
 ### Mostrar um caractere em especifico:
 
->let nome = 'Felipe Lohan'
-> console.log(nome.charAt(3)) //retorna 'i'
+```
+let nome = 'Felipe Lohan'
+console.log(nome.charAt(3)) //retorna 'i'
+```
 
 esse bloco de código vai me retornar o caractere 'i', pois de acordo com o index dessa minha String, o caractere 'i' é o número 3, os caracteres começam a ser contados do número 0.
 
@@ -51,8 +63,10 @@ ou seja o `charAt(n)` recebe um valor como argumento que é o index da palavra q
 
 ### Alterar determinado caractere por outro
 
->let nome = 'Felipe Lohan'
-> console.log(nome.replace(e, i)) //Filipe Lohan
+```
+let nome = 'Felipe Lohan'
+console.log(nome.replace(e, i)) //Filipe Lohan
+```
 
 o metódo `replace()` aceita 2 argumento, o primeiro é o primeiro caractere que você quer que seja recolocado, o segundo é por qual você quer que isso aconteça.
 
@@ -60,8 +74,43 @@ no caso do código acima, eu substitui o caractere 'e', por 'i', note que soment
 
 ### Saber o número de caracteres na sua String:
 
-``` let nome = 'Felipe Lohan'
-console.log(nome.lenght) //vai me retornar o numero de caracteres em Felipe Lohan ```
+``` 
+let nome = 'Felipe Lohan'
+console.log(nome.lenght) //vai me retornar o numero de caracteres em Felipe Lohan 
+``` 
 
 `lenght` não é um metódo, somente é um acesso a String, que armazena o tamanho dela, o retorno desse atributo é literalmente o número exato de caracteres usado na String, contando espaços em branco.
 
+### Saber a posição da primeira ou ultima ocorrência de um caractere da sua escolha:
+
+```
+const nome = 'Felipe Lohan'
+console.log(`indexOf: ${nome.indexOf('i')}`)
+```
+
+o metódo ` indexOf() ` aceita uma String como argumento, e vai retornar o index da primeira ocorrência desse String
+
+```
+const nome = 'Felipe Lohan'
+console.log(`indexOf: ${nome.lastIndexOf('i')}`)
+```
+
+o metódo ` lastIndexOf() ` aceita uma String como argumento, e vai retornar o index da ultima ocorrência desse String
+
+### Como recortar uma String:
+
+```
+const nome = 'Felipe Lohan'
+console.log(nome.substring(0, 6))
+```
+
+o metódo ` substring() ` aceita 2 valores como argumento, o primeiro valor será onde vai começar o recorte, o segundo valor, será até onde ela vai ser cortada.
+
+### Como remover espaços vazios na String
+
+```
+const nome = '   Felipe Lohan   '
+console.log(nome.trim())
+```
+
+o metódo ` trim() ` retorna a String sem espaços em branco 
