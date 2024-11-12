@@ -1,3 +1,4 @@
+//Essa é a meneira como é definido uma classe em JS, colocamos o nome class seguido do nome da classe, logo após colocamos o construtor, junto com os parâmetros, e abaixo é colocado os metodos. dentro de uma classe no JS, os metodos colocados dentro dela vão diretos para o prototype, isso deixa o código mais limpo e organiza a responsabilidade de cada entidade do código.
 class Product {
   constructor(name, price, quantity) {
     this.name = name;
