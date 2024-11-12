@@ -60,8 +60,8 @@ no caso do código acima, eu substitui o caractere 'e', por 'i', note que soment
 
 ### Saber o número de caracteres na sua String:
 
-> let nome = 'Felipe Lohan'
-> console.log(nome.lenght) //vai me retornar o numero de caracteres em Felipe Lohan
+``` let nome = 'Felipe Lohan'
+console.log(nome.lenght) //vai me retornar o numero de caracteres em Felipe Lohan ```
 
 `lenght` não é um metódo, somente é um acesso a String, que armazena o tamanho dela, o retorno desse atributo é literalmente o número exato de caracteres usado na String, contando espaços em branco.
 
